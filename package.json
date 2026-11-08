@@ -1,0 +1,39 @@
+{
+  "name": "stellar-rpc-gateway",
+  "version": "0.1.0",
+  "description": "A small Express gateway over Stellar RPC with clean fee estimation and transaction simulation responses.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "rpc",
+    "express",
+    "api"
+  ],
+  "dependencies": {
+    "@stellar/stellar-sdk": "^15.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.3.0",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
